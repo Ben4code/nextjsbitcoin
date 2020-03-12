@@ -5,7 +5,7 @@ const Navbar = () => {
     <nav className="navbar navbar-expand navbar-light bg-success mb-4">
       <div className="container">
         <a className="navbar-brand" href="#">
-          BitzPrice
+          BitMonitor
         </a>
         <div className="collapse navbar-collapse">
           <ul className="navbar-nav ml-auto">

@@ -2,16 +2,16 @@ import Link from "next/link";
 import Layout from "../components/Layout";
 
 import fetch from 'isomorphic-unfetch'
-import {Price} from '../components/Price'
+import {Currencies} from '../components/Currencies'
 
 
 const Index = (props) => {
   return (
     <Layout>
       <div>
-        <h1>Welcome to BizPrices</h1>
+        <h1>Welcome to BitMonitor</h1>
         <p>Check current Bitcoin rates</p>
-        <Price bpi={props.bpi} />
+        <Currencies bpi={props.bpi} />
       </div>
     </Layout>
   );

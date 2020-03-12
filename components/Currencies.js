@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export const Price = ({ bpi }) => {
+export const Currencies = ({ bpi }) => {
   const [currencies, setCurrencies] = useState({
     usd: true,
     eur: false,
@@ -50,7 +50,6 @@ export const Price = ({ bpi }) => {
       <ul className="list-group text-center">
         {usd && (
           <li className="list-group-item">
-            Bitcoin rate for{" "}
             <span className="text-danger">{bpi.USD.description}</span> :{" "}
             <span className="badge badge-danger">{bpi.USD.code}</span>{" "}
             <strong>{bpi.USD.rate}</strong>
@@ -59,7 +58,7 @@ export const Price = ({ bpi }) => {
 
         {gbp && (
           <li className="list-group-item">
-            Bitcoin rate for <span className="text-info">{bpi.GBP.description}</span> : {" "}
+             <span className="text-info">{bpi.GBP.description}</span> : {" "}
             <span className="badge badge-info">{bpi.GBP.code}</span>{" "}
             <strong>{bpi.GBP.rate}</strong>
           </li>
@@ -67,7 +66,6 @@ export const Price = ({ bpi }) => {
 
         {eur && (
           <li className="list-group-item">
-            Bitcoin rate for{" "}
             <span className="text-warning">{bpi.EUR.description}</span> :{" "}
             <span className="badge badge-warning">{bpi.EUR.code}</span>{" "}
             <strong>{bpi.EUR.rate}</strong>
